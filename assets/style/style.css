@@ -1,9 +1,9 @@
 body {
-    background-image: url("/assets/img/pxfuel\ \(1\).jpg");
-    background-size: 80%;
-    background-position-x: 30%;
-    background-position-y: 10%;
-    background-repeat: no-repeat;
+    background-image: url(../img/Menu_Theme_Void.webp), url(../img/pxfuel\ \(1\).jpg);
+    background-size: 60%, 70%;
+    background-position-x: 50%, 40%;
+    background-position-y: 0%, bottom;
+    background-repeat: no-repeat, no-repeat ;
     background-color: rgb(0, 0, 0);
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
