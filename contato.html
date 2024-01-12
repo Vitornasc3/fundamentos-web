@@ -27,27 +27,50 @@
 
     <form>
         <label for="nome">Nome: </label>
-        <br>
-        <input type="text" id="nome" size="30">
-        <br>
+        <input type="text" id="nome" onkeyup="validaNome()" size="30">
+        <div id="txtNome"></div>
         <label for="nome">Email: </label>
-        <br>
-        <input type="email" id="email" size="30">
-        <br>
+        <input type="email" id="email" onkeyup="validaEmail()" size="30">
+        <div id="txtEmail"></div>
         <label for="nome">Assunto: </label>
-        <br>
-        <textarea name="" id="aboutArea" cols="31" rows="6"></textarea>
-        <br>
-        <button style="width: 150px;">Enviar</button>
+        <textarea name="" id="aboutArea" onkeyup="validaAbout()" cols="31" rows="6"></textarea>
+        <div id="txtAbout"></div>
+        <button onclick="enviar()">Enviar</button>
     </form>
 
     <section class="address">
         <h3>Endereço:</h3>
         <p>Holloway - Londres</p>
         <p> Reino Unido </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633512.1807105048!2d-0.08390968292754357!3d51.66611689930826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b9fd875f4b1%3A0xc1f4679dc8b4bb01!2sHolloway%2C%20Londres%20N7%206PG%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1705004566651!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633512.1807105048!2d-0.08390968292754357!3d51.66611689930826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b9fd875f4b1%3A0xc1f4679dc8b4bb01!2sHolloway%2C%20Londres%20N7%206PG%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1705004566651!5m2!1spt-BR!2sbr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" tabindex="0"
+            referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoomIn()"
+            onmouseout="mapaZoomOut()"></iframe>
     </section>
 
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/Vitornasc3">
+                    <img src="/assets/img/github-logo.png" alt="Github Logo" width="50px" height="50px">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/vitor-do-nascimento-ferreira/">
+                    <img src="/assets/img/linkedin-logo.png" alt="Linkedin Logo" width="60px" height="60px">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.hollowknight.com/" target="_blank">
+                    <img src="/assets/img/clipart4363078.png" alt="Linkedin Logo" width="50px" height="50px">
+                </a>
+            </li>
+        </ul>
+        <p>Material de estudo fansite feito por Vitor Nascimento</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

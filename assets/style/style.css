@@ -1,7 +1,8 @@
 body {
     background-image: url("/assets/img/pxfuel\ \(1\).jpg");
-    background-position: bottom;
-    background-size: 100%;
+    background-size: 80%;
+    background-position-x: 30%;
+    background-position-y: 10%;
     background-repeat: no-repeat;
     background-color: rgb(0, 0, 0);
     font-family: 'Raleway', sans-serif;
@@ -12,7 +13,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #bbbbbb;
+    color: #d6d5d5;
 }
 
 a:hover {
@@ -34,12 +35,13 @@ a:hover {
     font-weight: 500;
     border-bottom: 1px solid #ffffff;
     background-color: #040404c3;
-    position:sticky;
+    position: sticky;
     top: 0;
     font-weight: 800;
 }
 
 button {
+    width: 140px;
     font-size: 16px;
     color: white;
     background-color: #ffffff00;
@@ -50,8 +52,9 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.638);
-    transition: 0.4s;
+    transition: 0.3s;
+    color: rgb(106, 210, 244);
+    border: solid rgb(106, 210, 244) 1px;
 }
 
 .readingSection {
@@ -69,20 +72,28 @@ form {
     padding: 30px;
 }
 
+form div {
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 input {
     color: #ffffff;
+    margin-top: 10px;
     padding: 7px;
     font-size: 15px;
-    border-radius: 7px;
+    border-radius: 8px;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.35);
 }
 
 textarea {
     color: #ffffff;
+    margin-top: 10px;
     padding: 7px;
     font-size: 15px;
-    border-radius: 7px;
+    border-radius: 8px;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.35);
 }
@@ -101,7 +112,11 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-weight: 700;
+}
 
+.address p {
+    margin-top: 0px;
 }
 
 .about {
@@ -109,15 +124,15 @@ h2 {
     align-items: center;
     border-radius: 15px;
     font-size: 25px;
-    background-color: #5352521e;
+    background-color: #5352522c;
     padding: 50px;
     margin: 20px;
     font-style: italic;
 }
 
 .about:hover {
-    background-color: #26262681;
-    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.173);
+    transition: 0.7s;
 }
 
 .title {
@@ -136,4 +151,29 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.101);
+    margin-top: 40px;
+    border-top: solid white 1px;
+    display: grid;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer li {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer p {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
